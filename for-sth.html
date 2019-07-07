@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>for-sth</title>
+    <script>
+        function f() {
+            var num_1 = 0;
+            start:
+            for(var i = 0;i < 2; i++)
+            {
+                for (var j = 0;j < 2; j++)
+                {
+                    if(i == 1 && j == 1)
+                    {
+                        break start;
+                    }
+                    num_1++;
+                }
+            }
+            alert(num_1);
+        }
+        f();
+
+        function f1() {
+            var num_2 = 0;
+            start:
+                for(var i = 0;i < 4; i++)
+                {
+                    for (var j = 0;j < 4; j++)
+                    {
+                        if(i == 2 && j == 2)
+                        {
+                            break start;
+                        }
+                        num_2++;
+                    }
+                }
+            alert(num_2);
+        }
+        f1()
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>
